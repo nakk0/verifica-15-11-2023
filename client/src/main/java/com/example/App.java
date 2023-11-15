@@ -20,9 +20,8 @@ public class App
 
             Boolean haswon = false;
             do{
-                answer = in.readLine();
-                
-                System.out.println(answer);
+
+                System.out.println(in.readLine());
 
                 String guess = input.nextLine();
 

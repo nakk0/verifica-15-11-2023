@@ -27,6 +27,16 @@ public class MyThread extends Thread {
             words.add("mattone");
             words.add("computer");
             words.add("elettronica");
+            words.add("armadio");
+            words.add("sedia");
+            words.add("argotone");
+            words.add("tavolo");
+            words.add("porta");
+            words.add("sassolino");
+            words.add("lupo");
+            words.add("pneumonoultramicroscopicsilocovolcanoconiosis");
+            words.add("hippopotomonstrosesquippedaliofobia");
+            words.add("bob");
 
             String word = words.get(new Random().nextInt(words.size()));
 
