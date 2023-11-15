@@ -1,13 +1,28 @@
 package com.example;
+import java.io.*;
+import java.net.*;
+import java.util.*;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
+        try{
+            System.out.println("server started and executing");
+            ServerSocket server = new ServerSocket(3000);
+            
+
+            while(true){
+                Socket client = server.accept();
+                MyThread clientManager = new MyThread(client);
+                clientManager.start();
+            }
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            System.out.println("Error during server instance");
+            System.exit(1);
+        }
     }
 }
